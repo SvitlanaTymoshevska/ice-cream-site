@@ -1,0 +1,25 @@
+.container {
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include for-tablet-up {
+        padding: 0 16px;
+        max-width: 768px;
+    }
+
+    @include for-desktop-up {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767.5px) {
+
+    .contacts .container,
+    .products .container,
+    .advantages .container,
+    .about .container,
+    .reviews .container {
+        max-width: 480px;
+    }
+}
