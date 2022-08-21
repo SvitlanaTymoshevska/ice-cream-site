@@ -1,0 +1,66 @@
+<div class="fr-backdrop fr-is-hidden" data-modal-fr>
+  <div class="modal-fr">
+    <button
+      class="modal-fr__button-close"
+      type="button"
+      aria-label="Button close franschise"
+      data-modal-close-fr
+    >
+      <svg class="button__icon" width="14px" height="14px" aria-hidden="true">
+        <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-fr__form" name="franchise-form">
+      <fieldset>
+        <legend class="modal-fr__title">
+          Please leave your contact details
+        </legend>
+
+        <label class="modal-fr__field">
+          <span class="modal-fr__label">Name</span>
+          <input
+            type="text"
+            class="modal-fr__input"
+            name="name"
+            title="Your Name"
+          />
+        </label>
+
+        <label class="modal-fr__field">
+          <span class="modal-fr__label">Phone</span>
+          <input
+            type="tel"
+            class="modal-fr__input"
+            name="phone-number"
+            title="Your phone number"
+            required
+          />
+        </label>
+
+        <label class="modal-fr__field">
+          <span class="modal-fr__label">E-mail</span>
+          <input
+            type="email"
+            class="modal-fr__input"
+            name="email"
+            title="Your e-mail. Example: example@gmail.com"
+          />
+        </label>
+
+        <label class="modal-fr__field modal-fr__field-textarea">
+          <span class="modal-fr__label">Comment</span>
+          <textarea
+            class="modal-fr__textarea"
+            name="comment"
+            placeholder="Type your comment here"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="button modal-fr__submit-button">
+          Send
+        </button>
+      </fieldset>
+    </form>
+  </div>
+</div>

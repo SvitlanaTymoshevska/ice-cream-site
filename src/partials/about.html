@@ -1,0 +1,45 @@
+<section class="about" id="about">
+    <div class="container">
+        <span class="about__span" data-aos="fade-up" data-aos-duration="3000">tradition and love</span>
+        <h2 class="about__title" data-aos="fade-up" data-aos-duration="3000">How it's made</h2>
+        <div class="about__wrapper">
+            <div class="about__cow-image">
+                <picture>
+                    <source srcset="
+                    ./images/about/cow-1x.png 1x, 
+                    ./images/about/cow-2x.png 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="
+                    ./images/about/cow-tab-1x.png 1x,
+                    ./images/about/cow-tab-2x.png 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="
+                    ./images/about/cow-mob-1x.png 1x,
+                    ./images/about/cow-mob-2x.png 2x"
+                    media="(min-width: 320px)" />
+                    <img loading="lazy" src="./images/about/cow-1x.png" alt="cow" />
+                </picture>
+            </div>
+            <div class="about__text-box">
+                <p class="about__text-1">
+                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                    cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+                    justo fringilla.
+                </p>
+                <p class="about__text-2">
+                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+                    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+                    suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                    tincidunt. <br /><br />
+                    Aliquam erat volutpat. Aenean accumsan.
+                </p>
+                <button type="button" class="about__button button">
+                    Read more
+                    <svg class="button__icon" width="8" height="16" aria-hidden="true">
+                        <use href="./images/svg/symbol-defs.svg#icon-single-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

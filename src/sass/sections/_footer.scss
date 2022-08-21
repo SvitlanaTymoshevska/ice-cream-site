@@ -1,0 +1,246 @@
+.footer {
+    padding-top: 40px;
+    width: 100%;
+    background-color: var(--bg-secondary-color);
+
+    &__content {
+        border-bottom: 1px solid var(--icon-secondary-color);
+        padding-bottom: 40px;
+    }
+
+    &__block-text {
+        max-width: 234px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &__not-big-text {
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.167;
+        text-transform: uppercase;
+
+        color: var(--text-fourth-color);
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    &__big-text {
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.147;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: var(--text-third-color);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background-color: var(--icon-primary-color);
+        border-radius: 50%;
+        transition: background-color, rotate var(--transition-duration-function);
+           
+        &:hover {
+            background-color: var(--accent-color);
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 148px;
+        width: 100%;
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+
+    &__text-tel {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    &__down-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+
+        text-align: center;
+
+        color: #907e82;
+        width: 150px;
+        padding-bottom: 8px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+}
+
+.icon-github {
+    width: 19px;
+    height: 19px;
+    fill: white;
+}
+
+.icon-facebook {
+    width: 9px;
+    height: 19px;
+    fill: white;
+}
+
+.icon-telegram {
+    width: 19px;
+    height: 15px;
+    fill: white;
+}
+
+// media
+
+@include for-tablet-up {
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .footer__block-text {
+        max-width: 340px;
+        width: 100%;
+
+        margin-bottom: 0;
+    }
+
+    .footer__not-big-text {
+        font-size: 26px;
+        line-height: 1.154;
+        letter-spacing: 0.04em;
+
+        margin-bottom: 12px;
+    }
+
+    .footer__big-text {
+        font-size: 48px;
+        line-height: 1.146;
+        letter-spacing: 0.06em;
+    }
+
+    .footer__social-link {
+        width: 34px;
+        height: 34px;
+    }
+
+    .icon-github {
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-facebook {
+        width: 9px;
+        height: 20px;
+    }
+
+    .icon-telegram {
+        width: 20px;
+        height: 16px;
+    }
+
+    .footer__text-tel {
+        font-size: 14px;
+        padding-bottom: 19px;
+        margin-bottom: 0;
+    }
+
+    .footer__down-text {
+        width: 278px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+        margin-top: 8px;
+    }
+}
+
+@include for-desktop-up {
+    .footer {
+        padding-top: 120px;
+    }
+
+    .footer__content {
+        padding-bottom: 60px;
+    }
+
+    .footer__block-text {
+        max-width: 480px;
+    }
+
+    .footer__not-big-text {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+    }
+
+    .footer__big-text {
+        font-size: 58px;
+        line-height: 1.138;
+    }
+
+    .footer__text-tel {
+        font-size: 16px;
+        padding-bottom: 0;
+        letter-spacing: 0.02em;
+    }
+}
+
+// анимация для социальных сетей
+
+.social-item:hover .rotate-scale-up-ver {
+    -webkit-animation: rotate-scale-up-ver 0.65s linear both;
+    animation: rotate-scale-up-ver 0.65s linear both;
+}
+
+@-webkit-keyframes rotate-scale-up-ver {
+    0% {
+        -webkit-transform: scale(1) rotateY(0);
+        transform: scale(1) rotateY(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateY(180deg);
+        transform: scale(2) rotateY(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateY(360deg);
+        transform: scale(1) rotateY(360deg);
+    }
+}
+
+@keyframes rotate-scale-up-ver {
+    0% {
+        -webkit-transform: scale(1) rotateY(0);
+        transform: scale(1) rotateY(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateY(180deg);
+        transform: scale(2) rotateY(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateY(360deg);
+        transform: scale(1) rotateY(360deg);
+    }
+}

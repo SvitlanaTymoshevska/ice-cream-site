@@ -1,0 +1,130 @@
+.fr-backdrop {
+  padding: 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+
+  visibility: visible;
+  opacity: 1;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: opacity var(--transition-duration-function),
+    visibility var(--transition-duration-function);
+
+  &.fr-is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal-fr {
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  overflow: auto;
+  transform: scale(1);
+  transition: transform var(--transition-duration-function);
+  border-radius: 20px;
+
+  @include for-tablet-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  text-align: center;
+  padding: 40px;
+  background-color: var(--bg-modal-color);
+
+  .fr-backdrop.fr-is-hidden & {
+    transform: scale(0.8);
+
+    @include for-tablet-up {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: var(--text-secondary-color);
+
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    margin-bottom: 25px;
+  }
+
+  &__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  &__field-textarea {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    margin-right: 10%;
+    text-align: left;
+    color: var(--text-secondary-color);
+  }
+
+  &__input {
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 20px;
+
+    font-size: 16px;
+    letter-spacing: 0.01em;
+
+    border: none;
+    border-radius: 8px;
+    color: var(--text-primary-color);
+  }
+
+  &__textarea {
+    margin: 0 auto;
+    padding: 12px 16px;
+    height: 100px;
+    resize: none;
+    width: 100%;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: var(--icon-secondary-color);
+    }
+  }
+}

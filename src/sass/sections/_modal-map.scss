@@ -1,0 +1,75 @@
+.map-backdrop {
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+
+  visibility: visible;
+  opacity: 1;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: opacity var(--transition-duration-function),
+    visibility var(--transition-duration-function);
+
+  &.map-is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal-map {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 40px 0 20px;
+  max-height: 80vh;
+  max-width: 90vw;
+  background-color: var(--bg-modal-color);
+
+  @include for-tablet-up {
+    max-height: 100vh;
+    max-width: 70vw;
+  }
+
+  @include for-desktop-up {
+    max-height: 100vh;
+    max-width: 60vw;
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map {
+    height: 56vh;
+    width: 90vw;
+
+    @include for-tablet-up {
+      height: 70vh;
+      width: 70vw;
+    }
+
+    @include for-desktop-up {
+      height: 80vh;
+      width: 60vw;
+    }
+  }
+}

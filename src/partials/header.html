@@ -1,0 +1,101 @@
+<div class="is-hidden" id="home"></div>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <a 
+            class="link header__logo" 
+            href="./index.html" 
+            title="IceCream - made with passion"
+            aria-label="link to IceCream webpage"> 
+                <img src="./images/header/logo.svg" 
+                alt="IceCream company logo" 
+                width="199" 
+                height="50" />
+            </a>
+        
+            <!--Десктоп навигация -->
+            <nav class="header__nav">
+                <ul class="list header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#home" class="link header__nav-link">Home</a>
+                    </li>
+            
+                    <li class="header__nav-item">
+                        <a href="#advantages" class="link header__nav-link">About us</a>
+                    </li>
+            
+                    <li class="header__nav-item">
+                        <a href="#about" class="link header__nav-link">How it’s made?</a>
+                    </li>
+            
+                    <li class="header__nav-item">
+                        <a href="#products" class="link header__nav-link">Our products</a>
+                    </li>
+            
+                    <li class="header__nav-item">
+                        <a href="#contacts" class="link header__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Кнопка Бургер -->
+            <button class="header__button-open" type="button" aria-expanded="false" aria-controls="mobile-menu"
+                aria-label="Open mobile menu" data-menu-button-open>
+                <svg class="button__icon" width="20px" height="13px" aria-hidden="true">
+                    <use href="./images/svg/symbol-defs.svg#icon-Burger"></use>
+                </svg>
+            </button>
+
+            <!-- Кнопка Купить для десктопа heartbeat-->
+            <button type="button" class="button header__button" aria-label="Button Buy now" data-modal-open-gr>
+                <span>Buy now</span>
+                <svg class="button__icon" width="8" height="16" aria-hidden="true">
+                    <use href="./images/svg/symbol-defs.svg#icon-single-right"></use>
+                </svg>
+            </button>
+
+            <!-- Мобильное меню -->
+            <div class="header__mobile-menu" id="mobile-menu" data-menu>
+                <div class="header__menu-content">
+                    <button class="header__button-close" type="button" aria-controls="mobile-menu" aria-label="Close mobile menu"
+                        data-menu-button-close>
+                        <svg class="button__icon" width="14px" height="14px" aria-hidden="true">
+                            <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="header__mobile-nav" data-menu-link>
+                        <ul class="list header__mobile-nav-list">
+                            <li class="header__mobile-nav-item">
+                                <a href="#home" class="link header__mobile-nav-link">Home</a>
+                            </li>
+
+                            <li class="header__mobile-nav-item">
+                                <a href="#advantages" class="link header__mobile-nav-link">About us</a>
+                            </li>
+
+                            <li class="header__mobile-nav-item">
+                                <a href="#about" class="link header__mobile-nav-link">How it’s made?</a>
+                            </li>
+
+                            <li class="header__mobile-nav-item">
+                                <a href="#products" class="link header__mobile-nav-link">Our products</a>
+                            </li>
+
+                            <li class="header__mobile-nav-item">
+                                <a href="#contacts" class="link header__mobile-nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="button header__mobile-button" aria-label="Button Buy now">
+                        <span>Buy now</span>
+                        <svg class="button__icon" width="8" height="16" aria-hidden="true">
+                            <use href="./images/svg/symbol-defs.svg#icon-single-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<div class="spacer is-hidden"></div>
