@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="./images/header/favicon.png" />
     <title>IceCream</title>
 
     <!-- Шрифти -->
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   </head>
   <body>
+
+    <!-- Sections -->
     <include src="./partials/header.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
@@ -26,5 +29,18 @@
     <include src="./partials/reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
+    <include src="./partials/gr-card.html"></include>
+
+    <!-- Java Script -->
+    <script type="module" src="./fixed-menu.js"></script>
+    <script type="module" src="./mobile-menu.js"></script>
+    <script type="module" src="./mobile-menu.js"></script>
+    <script type="module" src="./gr-card.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
