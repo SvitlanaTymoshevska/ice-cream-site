@@ -6,144 +6,144 @@
     @include for-desktop-up {
         background-image: url('../images/about/milk-2x.png');
         background-position: bottom;
-        background-size: contain;
+        background-size:contain;
         background-repeat: no-repeat;
     }
-}
 
-.about__span {
-    display: block;
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: calc(21 / 18);
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 15px;
-    color: #ffa5ba;
+    &__span {
+        display: block;
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(21 / 18);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+        color: #ffa5ba;
 
-    @include for-tablet-up {
-        font-size: 26px;
-        line-height: calc(30 / 26);
+        @include for-tablet-up {
+            font-size: 26px;
+            line-height: calc(30 / 26);
+        }
+
+        @include for-desktop-up {
+            font-size: 30px;
+            line-height: calc(34 / 30);
+            letter-spacing: 0.04em;
+        }
     }
 
-    @include for-desktop-up {
-        font-size: 30px;
-        line-height: calc(34 / 30);
+    &__title {
+        font-family: var(--secondary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: calc(39 / 34);
+        text-align: center;
         letter-spacing: 0.04em;
-    }
-}
-
-.about__title {
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: calc(39 / 34);
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-
-    color: var(--text-third-color);
-
-    @include for-tablet-up {
-        font-size: 48px;
-        line-height: calc(55 / 48);
-        margin-bottom: 40px;
-    }
-
-    @include for-desktop-up {
-        font-size: 58px;
-        line-height: calc(66 / 58);
-        letter-spacing: 0.06em;
-        margin-bottom: 60px;
-    }
-}
-
-.about__text-1 {
-    font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
-    color: var(--text-primary-color);
-    margin-bottom: 24px;
-
-    @include for-tablet-up {
-        font-size: 14px;
-        line-height: calc(25 / 14);
-        margin-bottom: 19px;
-    }
-
-    @include for-desktop-up {
-        font-size: 16px;
-        line-height: calc(28 / 16);
-        letter-spacing: 0.04em;
+        text-transform: uppercase;
         margin-bottom: 32px;
+
+        color: var(--text-third-color);
+
+        @include for-tablet-up {
+            font-size: 48px;
+            line-height: calc(55 / 48);
+            margin-bottom: 40px;
+        }
+
+        @include for-desktop-up {
+            font-size: 58px;
+            line-height: calc(66 / 58);
+            letter-spacing: 0.06em;
+            margin-bottom: 60px;
+        }
     }
-}
 
-.about__text-2 {
-    font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(19 / 12);
-    color: var(--text-fifth-color);
-    margin-bottom: 20px;
+    &__text-box {
+        @include for-phone-only {
+            max-width: 100%;
+            padding: 0px 60px 0px 0px;
+            background-image: url('../images/about/milk-mob-2x.png');
+            background-repeat: no-repeat;
+            background-position-y: 30%;
+            background-size: 100% auto;
+        }
 
-    @include for-tablet-up {
-        font-size: 14px;
-        line-height: calc(25 / 14);
+        @include for-tablet-up {
+            max-width: 334px;
+            margin-left: 32px;
+            padding: 40px 18px 0px 0px;
+        }
+
+        @include for-desktop-up {
+            max-width: 463px;
+            margin-left: 99px;
+            padding: 90px 0px 0px 0px;
+        }
+    }
+
+    &__text-1 {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(19 / 12);
+        color: var(--text-primary-color);
+        margin-bottom: 24px;
+
+        @include for-tablet-up {
+            font-size: 14px;
+            line-height: calc(25 / 14);
+            margin-bottom: 19px;
+        }
+
+        @include for-desktop-up {
+            font-size: 16px;
+            line-height: calc(28 / 16);
+            letter-spacing: 0.04em;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__text-2 {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: calc(19 / 12);
+        color: var(--text-fifth-color);
+        margin-bottom: 20px;
+
+        @include for-tablet-up {
+            font-size: 14px;
+            line-height: calc(25 / 14);
+            margin-bottom: 40px;
+        }
+
+        @include for-desktop-up {
+            font-size: 16px;
+            line-height: calc(28 / 16);
+            letter-spacing: 0.04em;
+        }
+    }
+
+    &__wrapper {
+        display: block;
+
+        @include for-tablet-up {
+            display: flex;
+            background-image: none;
+        }
+    }
+
+    &__cow-image {
+        display: block;
         margin-bottom: 40px;
     }
 
-    @include for-desktop-up {
-        font-size: 16px;
-        line-height: calc(28 / 16);
-        letter-spacing: 0.04em;
+    &__button {
+        height: 44px;
     }
-}
-
-.about-text-block {
-    @include for-phone-only {
-        max-width: 100%;
-        padding: 0px 60px 0px 0px;
-        background-image: url('../images/about/milk-mob-2x.png');
-        background-repeat: no-repeat;
-        background-position-y: 30%;
-        background-size: 100% auto;
-    }
-
-    @include for-tablet-up {
-        max-width: 334px;
-        margin-left: 32px;
-        padding: 40px 18px 0px 0px;
-    }
-
-    @include for-desktop-up {
-        max-width: 463px;
-        margin-left: 99px;
-        padding: 90px 0px 0px 0px;
-    }
-}
-
-.block-flex {
-    display: block;
-
-    @include for-tablet-up {
-        display: flex;
-        background-image: none;
-    }
-}
-
-.images-cow {
-    display: block;
-    margin-bottom: 40px;
-}
-
-.button__about {
-    height: 44px;
 }
