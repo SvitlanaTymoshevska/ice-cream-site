@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".slick-dots");e.addEventListener("click",(function(t){if(t.target.classList.contains("current"))return;var s=e.querySelector(".current"),r=document.querySelector(".reviews__slide"),c=t.target.dataset.button,i=document.querySelector('[data-review="'.concat(c,'"]'));s.classList.replace("current","slick-dots__slide"),t.target.classList.replace("slick-dots__slide","current"),r.classList.replace("reviews__slide","visually-hidden"),i.classList.replace("visually-hidden","reviews__slide")}))}();
+//# sourceMappingURL=index.ee16272f.js.map
